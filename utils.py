@@ -1,6 +1,6 @@
-# Math library
-# Author: Sébastien Combéfis
-# Version: February 2, 2016
+# Math Library
+# Author: Hadrien Hachez
+# Version: February 3, 2016
 
 def fact(n):
     """Computes the factorial of a natural number.
@@ -51,7 +51,14 @@ def integrate(function, lower, upper):
     Post: Returns an approximation of the integral from 'lower' to 'upper'
           of the specified 'function'.
     """
-    pass
+    step=(upper-lower)/10000
+    x=lower
+    result=0
+    while x<upper:
+        result+=eval(function)*step
+        x+=step
+    return result
+    
 
 if __name__ == '__main__':
     print(fact(5))
