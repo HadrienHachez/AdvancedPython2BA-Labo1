@@ -1,6 +1,7 @@
 # test_utils.py
 # Author: Hadrien Hachez
 # Version: February 3, 2016
+# cool
 
 import unittest
 import utils
